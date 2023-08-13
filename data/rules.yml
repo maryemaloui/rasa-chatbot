@@ -1,0 +1,53 @@
+version: "3.1"
+
+rules:
+
+- rule: Dites "réponse saluer" chaque fois que l'utilisateur dit saluer
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+
+- rule: Dites au revoir chaque fois que l'utilisateur dit au revoir
+  steps:
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- rule: Dites "Je suis linsoft-bot" chaque fois que l'utilisateur défie
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- rule: Dites "réponse aide" chaque fois que l'utilisateur demande l'aide
+  steps:
+  - intent: aide
+  - action: utter_aide
+
+- rule: Dites "réponse info" chaque fois que l'utilisateur demande les informations
+  steps:
+  - intent: info
+  - action: utter_info
+
+- rule: Dites "réponse formation" chaque fois que l'utilisateur demande les formations
+  steps:
+  - intent: formation
+  - action: utter_formation
+
+- rule: Dites "réponse contact" chaque fois que l'utilisateur demande  le contact
+  steps:
+  - intent: contact
+  - action: utter_contact
+
+- rule: Dites "réponse local" chaque fois que l'utilisateur demande la localisation
+  steps:
+  - intent: local
+  - action: utter_local
+
+- rule: Dites "répense merci" chaque fois que l'utilisateur dvous remercie
+  steps:
+  - intent: merci
+  - action: utter_merci
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - action: utter_default
+

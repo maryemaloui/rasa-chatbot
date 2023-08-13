@@ -1,0 +1,133 @@
+version: "3.1"
+
+stories:
+
+- story: chemin normal
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: aide
+  - action: utter_aide
+  - intent: info
+  - action: utter_info
+  - intent: formation
+  - action: utter_formation
+  - intent: local
+  - action: utter_local
+  - intent: contact
+  - action: utter_contact
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: chemin sans localisation
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: aide
+  - action: utter_aide
+  - intent: info
+  - action: utter_info
+  - intent: formation
+  - action: utter_formation
+  - intent: contact
+  - action: utter_contact
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: chemin sans formation
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: aide
+  - action: utter_aide
+  - intent: info
+  - action: utter_info
+  - intent: local
+  - action: utter_local
+  - intent: contact
+  - action: utter_contact
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: chemin sans info
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: aide
+  - action: utter_aide
+  - intent: formation
+  - action: utter_formation
+  - intent: local
+  - action: utter_local
+  - intent: contact
+  - action: utter_contact
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: chemin sans contact
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: aide
+  - action: utter_aide
+  - intent: info
+  - action: utter_info
+  - intent: formation
+  - action: utter_formation
+  - intent: local
+  - action: utter_local
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: chemin sans aide
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: info
+  - action: utter_info
+  - intent: formation
+  - action: utter_formation
+  - intent: local
+  - action: utter_local
+  - intent: contact
+  - action: utter_contact
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: chemin sans salutation
+  steps:
+  - intent: aide
+  - action: utter_aide
+  - intent: info
+  - action: utter_info
+  - intent: formation
+  - action: utter_formation
+  - intent: local
+  - action: utter_local
+  - intent: contact
+  - action: utter_contact
+  - intent: au_revoir
+  - action: utter_au_revoir
+
+- story: chemin sans au revoir
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: aide
+  - action: utter_aide
+  - intent: info
+  - action: utter_info
+  - intent: formation
+  - action: utter_formation
+  - intent: local
+  - action: utter_local
+  - intent: contact
+  - action: utter_contact
+
+- story: chemin sans au revoir
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: etat
+  - action: utter_etat
+  

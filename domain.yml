@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - saluer
+  - au_revoir
+  - bot_challenge
+  - merci
+  - aide
+  - info
+  - formation
+  - local
+  - contact
+  - etat
+
+responses:
+  utter_saluer:
+  - text: "Bonjour"
+
+  utter_merci:
+  - text: "Nous vous en prie, nous sommes toujours à votre service pour vous offrir le meilleur"
+
+  utter_au_revoir:
+  - text: "Merci de nous contacter, au revoir"
+  
+  utter_aide:
+  - text: "Je suis à votre disposition pour répondre à vos questions, comment je peux vous aider cher client" 
+
+  utter_info:
+  - text: "LinSoft, est une SSII, dispose des ressources certifiées assurant le conseil, le design, l’intégration, la commercialisation, le support de l’ensemble des offres de ses partenaires éditeurs et l'intégration de solutions IT dans des environnements techniques complexes et hétérogènes."
+   
+  utter_formation:
+  - text: "LinSoft dispense le cursus de formation officiel de **Red Hat** et de **AWS**, y compris les examens de certification pour l’obtention des certifications les plus réputées dans le monde IT."
+
+  utter_contact:
+  - text: "Pour plus des détails, contactez-nous au: \n Téléphone : (+216) 31 332 200 \n E-mail : contact@linsoft.xyz"
+
+  utter_local:
+  - text: "05 Rue Omar Khayem, Immeuble ZAHRA, Zone d'activité, La Goulette - Lac 3 2060, Tunis, Tunisie"
+  
+  utter_etat:
+  - text: "Bien, merci"
+
+  utter_bot_challenge:
+  - text: "Merci pour votre visite sur notre page Linsoft! \n Je suis **Linsoft-Bot** votre agent conversationnel qui va vous aider et répondre à vos questions."
+
+  utter_default:
+  - text: "Désolé, je n'ai pas compris votre message réessayez"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,92 @@
+version: "3.1"
+
+nlu:
+- intent: saluer
+  examples: |
+    - bonjour
+    - bonsoir
+    - salut
+    - bonne soirée
+    - bon après-midi
+    - hi
+    - hello
+  
+- intent: au_revoir
+  examples: |
+    - au revoir
+    - à plus tard
+    - Good bye
+    - bonne nuit
+    - passe une bonne journée
+    - Bye 
+    - à plus tard
+
+- intent: bot_challenge
+  examples: |
+    - Etes-vous un robot?
+    - Êtes-vous un être humain?
+    - est-ce que je parle à un bot ?
+    - Est-ce que je parle à un humain ?
+    - vous êtes un agent converationnnel?
+    - Etes-vous un bot?
+
+- intent: merci
+  examples: |
+    - Merci
+    - thank you
+    - thanks
+
+- intent: aide
+  examples: |
+    - pouvez-vous m'aider
+    - aidez moi
+    - j'ai besoin d'aide
+    - aide
+    - qui est vous
+    - help
+
+- intent: info
+  examples: |
+    - informations
+    - info
+    - infos
+    - Services
+    - Quels sont services 
+    - c'est quoi linsoft
+
+- intent: formation
+  examples: |
+    - Quels sont les certifications disponibles ?
+    - Quels sont les formations disponibles ?
+    - certifications
+    - formations
+
+- intent: contact
+  examples: |
+    - ok
+    - détails 
+    - details 
+    - contact
+    - téléphone
+    - telephone
+    - numero
+    - prix
+    - email
+
+- intent: local
+  examples: |
+    - Adresse 
+    - où se trouve vous
+    - où se situe vous 
+    - localisation
+    - local
+    - place
+    - où 
+    - ou
+    
+- intent: etat
+  examples: |
+    - Comment allez-vous?
+    - ça va?
+    - cv
+
